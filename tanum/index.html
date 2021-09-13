@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Uke 37</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Uke 37 - micro:bit-oppgave</h1>
+        <p>Du skal gjøre en micro:bit-øvelse, men den må åpnes på en litt spesiell måte.<br>
+        Så du må lese gjennom alt her før du starter.</p>
+        <p>Nevnte jeg at jeg har kodet denne hjemmesiden selv?</p>
+      </div>
+    </div>
+    <div class="container"><div class="card">
+      <div class="card-header">Steg 1</div>
+      <div class="card-body">
+        <p>Du må åpne denne siden i Safari</p>
+        <img src="https://isimagan.github.io/stemmeseddel-ovelse/tanum/IMG_0292.jpg" class="img-fluid" />
+      </div>
+    </div>
+    <p></p>
+    <div class="card">
+      <div class="card-header">Steg 2</div>
+      <div class="card-body">Gå inn på linken. Den får du etter at du har lest om alle stegene.</div>
+    </div>
+      <p></p>
+    <div class="card">
+      <div class="card-header">Steg 3</div>
+      <div class="card-body">
+        <p>Hvis du på toppen av siden får mulighet til å åpne i micro:bit-appen, så skal du <strong>ikke</strong> gjøre det.<br>
+          Trykk på krysset på siden for å få den bort. Da blir det også lettere å gjøre øvelsen.</p>
+      </div>
+    </div>
+    <p></p>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" id="understood"> Har du lest og forstått stegene så kryss av i boksen
+      </label>
+    </div>
+    <div id="ovelselink">
+      <p><strong>Kopier og lim inn denne linken:</strong><br>
+      https://makecode.microbit.org/#tutorial:github:isimagan/rakett/tutorial7</p>
+    </div>
+    <p><br><br></p>
+    <script>
+      $(document).ready(function(){
+        $("div#ovelselink").hide();
+        $("#understood").prop("checked", false);
+        $("#understood").click(function(){
+          $("div#ovelselink").fadeToggle("slow");
+        })
+      });
+    </script>   
+    </div></body>
+</html>
