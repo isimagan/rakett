@@ -147,3 +147,8 @@ input.onButtonPressed(Button.A, function(){
     basic.clearScreen()
 })
 ```
+
+## Ferdig @showdialog
+**Ferdig!** Viktig at du nå ikke forlater *Safari*, men spør Martin eller en som er ferdig allerede om hvordan kodingen din lastes opp til en micro:bit.
+
+Når du ser at kodingen fungerer på din micro:bit kan du fortsette med neste oppgave i **Showbie**.
