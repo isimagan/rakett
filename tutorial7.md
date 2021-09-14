@@ -104,6 +104,20 @@ input.onButtonPressed(Button.A, function(){
 ```
 
 ## Steg 8
+Dette er jo en nedtelling! Da skal det jo gå ett sekund mellom hvert tall. Da må vi under ``||basic:vis tall||`` sette inn ``||basic:pause (ms)||``, og bytte ut ``100`` med ``1000`` millisekunder (ms).
+
+``1000 millisekunder = 1 sekund``
+``` blocks
+input.onButtonPressed(Button.A, function(){
+    basic.clearScreen()
+    basic.showString("T-")
+    for (let indeks = 0; indeks <= 5; indeks++) {
+        basic.showNumber(5 - indeks)
+        basic.pause(1000)
+    }
+})
+```
+## Steg 9
 Nå skal raketten skytes opp. Vis raketten fra ``||basic:ved start||``. Den må animeres ut av micro:biten, og da trenger du å sette inn flere ``||basic:vis skjerm||``-blokker.
 
 Den settes inn etter ``||loops:gjenta||``-blokken. Avslutt med å tømme skjermen.
