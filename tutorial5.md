@@ -1,5 +1,8 @@
 # Rakettoppskytning
 
+## Intro
+Vi skal telle ned fra 5 og skyte opp en rakett. Før du trykker på neste kan du slette ``||basic:gjenta for alltid||``.
+
 ## Steg 1
 Vi starter med å tegne et bilde av en rakett innenfor ``||basic:ved start||``.
 ``` blocks
