@@ -1,7 +1,9 @@
 # Rakettoppskytning
 
 ## Steg 1
-Vi starter med å tegne et bilde av en rakett innenfor ``||basic:ved start||``.
+Vi starter med å slette ``||basic:gjenta for alltid||``-blokken.
+
+Deretter tegner vi et bilde av en rakett innenfor ``||basic:ved start||``.
 ``` blocks
 basic.showLeds(`
     . . # . .
@@ -123,6 +125,12 @@ Nå skal raketten skytes opp. Vis raketten fra ``||basic:ved start||``. Den må 
 Den settes inn etter ``||loops:gjenta||``-blokken. Avslutt med å tømme skjermen.
 ``` blocks
 input.onButtonPressed(Button.A, function(){
+    basic.clearScreen()
+    basic.showString("T-")
+    for (let indeks = 0; indeks <= 5; indeks++) {
+        basic.showNumber(5 - indeks)
+        basic.pause(1000)
+    }
     basic.showLeds(`
         . . # . .
         . # # # .
